@@ -42,7 +42,7 @@ module.exports = function (grunt) {
           banUnknown: false,
           root: grunt.file.readJSON("schemas/json/schema-draft-v4.json")
         },
-        src: ["schemas/json/*.json", "!schemas/json/ninjs-1.0.json"] // ninjs 1.0 is draft v3
+        src: ["schemas/json/*.json"]
       },
       options: {
         schemas: {
@@ -51,7 +51,6 @@ module.exports = function (grunt) {
           "http://json.schemastore.org/grunt-task": grunt.file.readJSON("schemas/json/grunt-task.json"),
           "http://json.schemastore.org/jsonld": grunt.file.readJSON("schemas/json/jsonld.json"),
           "http://json.schemastore.org/schema-org-thing": grunt.file.readJSON("schemas/json/schema-org-thing.json"),
-          "http://json.schemastore.org/xunit.runner.schema": grunt.file.readJSON("schemas/json/xunit.runner.schema.json"),
           "http://json.schemastore.org/feed-1": grunt.file.readJSON("schemas/json/feed-1.json"),
         }
       }
@@ -62,42 +61,10 @@ module.exports = function (grunt) {
       //    options: { url: "https://raw.githubusercontent.com/composer/composer/master/res/composer-schema.json" },
       //    dest: "schemas/json/composer.json"
       //},
-      contribute: {
-        options: { url: "https://raw.githubusercontent.com/mozilla/contribute.json/master/schema.json" },
-        dest: "schemas/json/contribute.json"
-      },
-      swagger20: {
-        options: { url: "https://raw.githubusercontent.com/swagger-api/swagger-spec/master/schemas/v2.0/schema.json" },
-        dest: "schemas/json/swagger-2.0.json"
-      },
-      resume: {
-        options: { url: "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json" },
-        dest: "schemas/json/resume.json"
-      },
       jsonld: {
         options: { url: "https://raw.githubusercontent.com/json-ld/json-ld.org/master/schemas/jsonld-schema.json" },
         dest: "schemas/json/jsonld.json"
       },
-      ninjs_v13: {
-        options: { url: "https://www.iptc.org/std/ninjs/ninjs-schema_1.3.json" },
-        dest: "schemas/json/ninjs-1.3.json"
-      },
-      ninjs_v12: {
-        options: { url: "https://www.iptc.org/std/ninjs/ninjs-schema_1.2.json" },
-        dest: "schemas/json/ninjs-1.2.json"
-      },
-      ninjs_v11: {
-        options: { url: "https://www.iptc.org/std/ninjs/ninjs-schema_1.1.json" },
-        dest: "schemas/json/ninjs-1.1.json"
-      },
-      ninjs_v10: {
-        options: { url: "https://www.iptc.org/std/ninjs/ninjs-schema_1.0.json" },
-        dest: "schemas/json/ninjs-1.0.json"
-      },
-      xunit_v23: {
-        options: { url: "https://xunit.github.io/schema/v2.3/xunit.runner.schema.json" },
-        dest: "schemas/json/xunit.runner.schema.json"
-      }
     },
 
     watch: {

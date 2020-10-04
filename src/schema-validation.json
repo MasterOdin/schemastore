@@ -87,7 +87,6 @@
     "neoload.json",
     "nest-cli.json",
     "netlify.json",
-    "ninjs-1.0.json",
     "nlu.json",
     "nodemon.json",
     "openfin.json",
@@ -108,7 +107,6 @@
     "proxies.json",
     "pubspec.json",
     "renovate.json",
-    "resume.json",
     "sarif-2.0.0-csd.2.beta.2018-10-10.json",
     "sarif-2.0.0.json",
     "sarif-2.1.0-rtm.0.json",
@@ -133,7 +131,6 @@
     "servicehub.config.schema.json",
     "solidaritySchema.json",
     "sourcemap-v3.json",
-    "swagger-2.0.json",
     "template.json",
     "toolinfo.1.1.0.json",
     "travis.json",
@@ -152,9 +149,6 @@
     "---> below this line is for failed test <---",
     "band-manifest.json",
     "debugsettings.json",
-    "ninjs-1_1.json",
-    "ninjs-1_2.json",
-    "swagger-2_0.json",
     "webjob-publish-settings.json"
   ],
   "strongmode": [
